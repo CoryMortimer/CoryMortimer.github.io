@@ -63,9 +63,7 @@
 }
 
 .shadow {
-    background-color: rgb(154, 247, 191);
-    /*154,247,191*/
-    
+    background-color: rgb(154, 247, 191);    
     box-shadow: 10px 10px 5px #888888;
 }
 
