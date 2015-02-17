@@ -5,57 +5,52 @@
     color: white;
 }
 
+/*Code inspired by http://stackoverflow.com/questions/11777598/font-size-relative-to-the-users-screen-resolution*/
 @media all and (max-width: 9999999px) {
-    /* screen size until 1200px */
+    /* screen size until a really large screen */
     
     .overlayText {
         font-size: 7em;
-        /* 1.5x default size */
     }
 }
 
 @media all and (max-width: 1150px) {
-    /* screen size until 1200px */
+    /* screen size until 1150px */
     
     .overlayText {
         font-size: 5.7em;
-        /* 1.5x default size */
     }
 }
 
 @media all and (max-width: 950px) {
-    /* screen size until 1200px */
+    /* screen size until 950px */
     
     .overlayText {
         font-size: 4.7em;
-        /* 1.5x default size */
     }
 }
 
 @media all and (max-width: 800px) {
-    /* screen size until 1200px */
+    /* screen size until 800px */
     
     .overlayText {
         font-size: 3.8em;
-        /* 1.5x default size */
     }
 }
 
 @media all and (max-width: 600px) {
-    /* screen size until 1000px */
+    /* screen size until 600px */
     
     .overlayText {
         font-size: 2.8em;
-        /* 1.2x default size */
     }
 }
 
 @media all and (max-width: 450px) {
-    /* screen size until 500px */
+    /* screen size until 450px */
     
     .overlayText {
         font-size: 2em;
-        /* 0.8x default size */
     }
 }
 
@@ -75,54 +70,7 @@
 }
 
 body {
-    /*    background-color: #FF574D !important;*/
-    
     font-family: 'Open Sans', sans-serif!important;
-    /*    background-image: url(/img/gray_jean_@2X.jpg);*/
-    
+    /*Background image from http://subtlepatterns.com/congruent-pentagon*/
     background-image: url(/img/congruent_pentagon.png);
-    /*
-    background: 
-linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
-linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
-linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
-linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
-background-size: 100px 100px;
-background-color: #EC173A;
-*/
-}
-
-.other {
-    /*First Choice*/
-    
-    background: -webkit-linear-gradient(#2BC0E4 10%, #EAECC6 90%);
-    /* Chrome 10+, Saf5.1+ */
-    
-    background: -moz-linear-gradient(#2BC0E4 10%, #EAECC6 90%);
-    /* FF3.6+ */
-    
-    background: -ms-linear-gradient(#2BC0E4 10%, #EAECC6 90%);
-    /* IE10 */
-    
-    background: -o-linear-gradient(#2BC0E4 10%, #EAECC6 90%);
-    /* Opera 11.10+ */
-    
-    background: linear-gradient(#2BC0E4 10%, #EAECC6 90%);
-    /* W3C */
-    /*Second Choice*/
-    
-    background: -webkit-linear-gradient(#085078 10%, #85D8CE 90%);
-    /* Chrome 10+, Saf5.1+ */
-    
-    background: -moz-linear-gradient(#085078 10%, #85D8CE 90%);
-    /* FF3.6+ */
-    
-    background: -ms-linear-gradient(#085078 10%, #85D8CE 90%);
-    /* IE10 */
-    
-    background: -o-linear-gradient(#085078 10%, #85D8CE 90%);
-    /* Opera 11.10+ */
-    
-    background: linear-gradient(#085078 10%, #85D8CE 90%);
-    /* W3C */
 }
