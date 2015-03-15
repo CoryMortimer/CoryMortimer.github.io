@@ -64,7 +64,7 @@
 
     <!--About Me-->
     <div id="aboutMeTrigger"></div>
-    <div id="aboutMe" class="padding4Nav container">
+    <div id="aboutMe" class="padding4Nav container wow slideInUp">
         <div class="row shadow">
             <div class="col-md-3 col-sm-5 hidden-xs">
                 <img src="img/improv.jpg" class="img-responsive" />
@@ -91,7 +91,7 @@
 
     <!--Projects-->
     <div id="projectsTrigger"></div>
-    <div id="projects" class="container padding4Nav">
+    <div id="projects" class="container padding4Nav wow slideInUp">
         <div class="row shadow">
             <div class="col-xs-12 text-center">
                 <h1>Programming Projects</h1>
@@ -128,7 +128,7 @@
 
     <!-- Short Films   -->
     <div id="shortFilmsTrigger"></div>
-    <div id="shortFilms" class="padding4Nav container">
+    <div id="shortFilms" class="padding4Nav container wow slideInUp">
         <div class="row shadow">
             <div class="col-xs-12 text-center">
                 <h1>Short Films</h1>
@@ -168,7 +168,7 @@
 
     <!--Connect-->
     <div id="connectTrigger"></div>
-    <div id="connect" class="padding4Nav container">
+    <div id="connect" class="padding4Nav container wow slideInUp">
         <div class="row shadow">
             <div class="col-xs-12 col-sm-7 col-md-8">
                 <div class="row ">
@@ -218,9 +218,15 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+<!--
     <script src="js/TweenMax.js"></script>
     <script src="js/ScrollMagic.js"></script>
     <script src="js/animation.gsap.js"></script>
+-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="js/scrolling.js"></script>
 </body>
 
