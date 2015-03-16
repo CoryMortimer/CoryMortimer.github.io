@@ -1,74 +1,8 @@
-.overlayText {
-    position: absolute;
-    top: 28%;
-    left: 40%;
-    color: white;
-}
-
-/*Code inspired by http://stackoverflow.com/questions/11777598/font-size-relative-to-the-users-screen-resolution*/
-@media all and (max-width: 9999999px) {
-    /* screen size until a really large screen */
-    
-    .overlayText {
-        font-size: 7em;
-    }
-}
-
-@media all and (max-width: 1150px) {
-    /* screen size until 1150px */
-    
-    .overlayText {
-        font-size: 5.7em;
-    }
-}
-
-@media all and (max-width: 950px) {
-    /* screen size until 950px */
-    
-    .overlayText {
-        font-size: 4.7em;
-    }
-}
-
-@media all and (max-width: 800px) {
-    /* screen size until 800px */
-    
-    .overlayText {
-        font-size: 3.8em;
-    }
-}
-
-@media all and (max-width: 600px) {
-    /* screen size until 600px */
-    
-    .overlayText {
-        font-size: 2.8em;
-    }
-}
-
-@media all and (max-width: 450px) {
-    /* screen size until 450px */
-    
-    .overlayText {
-        font-size: 2em;
-    }
-}
-
-.imgRelative {
-    position: relative;
-}
-
-.padding4Nav {
-    padding-top: 50px;
-}
-
-.shadow {
-    background-color: rgb(154, 247, 191);    
-    box-shadow: 10px 10px 5px #888888;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif!important;
-    /*Background image from http://subtlepatterns.com/congruent-pentagon*/
-    background-image: url(/img/congruent_pentagon.png);
+    font-family: 'Oxygen', sans-serif !important;
+}
+
+.xsImage {
+    width: 50%;
+    height: auto
 }
