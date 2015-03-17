@@ -6,3 +6,30 @@ body {
     width: 50%;
     height: auto
 }
+
+.overlayImage{
+    position: absolute;
+/*    top: 30%;*/
+    top:60%;
+    left: 18%;
+    background:rgba(0,0,0,0.1);
+    width: 65%;
+}
+
+.panel-heading {
+    background-color: black !important;
+    color: white !important;
+}
+
+.panel {
+    border-color: black;
+}
+
+
+#bgvid {
+    width: 100%;  
+}
+
+@media screen and (max-width: 768px) {
+    .overlayImage{top:60%}
+}

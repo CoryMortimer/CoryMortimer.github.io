@@ -7,40 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cory Mortimer</title>
-    <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <img src="img/Name.002.png" class="img-responsive" />
+<!--Header-->
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="hidden-xs">
+                <video autoplay loop poster="img/Black.001.png" id="bgvid">
+                    <source src="/Website%201.2.mp4" type="video/mp4">
+                </video>
             </div>
+            <div class="visible-xs">
+                <img src="img/me.jpg" style="width: 100%">
+            </div>
+            <img src="img/Name.002.png" class="overlayImage" />
         </div>
     </div>
+        </div>
+<br>
+    <br>
+    <br>
     
 <!--FLOQ All except xs-->
     <div class="container hidden-xs">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="col-sm-4 text-center wow fadeInUp">
-                    <img src="img/Letters.001.png" class="img-responsive" />
+                    <img src="img/Letters.001.png" class="img-responsive" onmouseover="this.src='img/_Letters.001.png'" onmouseout="this.src='img/Letters.001.png'"/>
                     <h1>Fun Loving</h1>
                     <p>I am always looking to have a fun time with anything I do. Whether it be work or play, I always
                     try to make the best out of the situation.</p>
                 </div>
                 <div class="col-sm-4 text-center wow fadeInUp" data-wow-delay=".5s">
-                    <img src="img/Letters.002.png" class="img-responsive" />
+                    <img src="img/Letters.002.png" class="img-responsive" onmouseover="this.src='img/_Letters.002.png'" onmouseout="this.src='img/Letters.002.png'"/>
                     <h1>Organized</h1>
                     <p>Rarely do you see my not trying to schedule my tasks perfectly. I always use Google Calendar
                     to sync my events and Wunderlist to remind me of my tasks.</p>
                 </div>
                 <div class="col-sm-4 text-center wow fadeInUp" data-wow-delay="1s">
-                    <img src="img/Letters.003.png" class="img-responsive" />
+                    <img src="img/Letters.003.png" class="img-responsive" onmouseover="this.src='img/_Letters.003.png'" onmouseout="this.src='img/Letters.003.png'"/>
                     <h1>Quirky</h1>
                     <p>Sometimes, you don't know what's going to happen around me, but I can guarantee you that I will get my work done. Possibly, with a splash of entertainment.</p>
                 </div>
@@ -73,11 +85,18 @@
     </div>
     
     
+
     <br>
     <br>
     
+    
 <!--Projects-->
     <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Projects</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="panel-group" id="projects" role="tablist" aria-multiselectable="true">
@@ -136,11 +155,18 @@
         </div>
     </div>
     
+    
     <br>
     <br>
     
 <!--Short Films-->
+    
     <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Short Films</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-6 hidden-xs">
                 <div class="embed-responsive embed-responsive-4by3">
@@ -231,6 +257,22 @@
     </div>
     
     
+    <br>
+    <br>
+    
+<!--Connect-->
+    
+    <div class="container wow fadeIn">
+        <div class="row">
+            <h1>Connect</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                            <script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/cory-mortimer/a3/233/369" data-format="inline"></script>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
