@@ -102,14 +102,29 @@
             <div class="col-sm-6">
                 <div class="panel-group" id="projects" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="move">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#projects" href="#collapseMove" aria-expanded="true" aria-controls="collapseMove">
+          Move
+        </a>
+      </h4>
+    </div>
+    <div id="collapseMove" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="move">
+      <div class="panel-body">
+        <b style="color:red">COMING SOON</b><br><br>
+        Move is a Chrome application to remind computer users to get up every hour. Built with AngularJS, Move will be released on the Chrome Web Store soon!
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="shakedown">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#projects" href="#collapseShakedown" aria-expanded="true" aria-controls="collapseShakedown" onclick="changeProject('shakedown')">
+        <a class="collapsed" data-toggle="collapse" data-parent="#projects" href="#collapseShakedown" aria-expanded="false" aria-controls="collapseShakedown">
           Shakedown
         </a>
       </h4>
     </div>
-    <div id="collapseShakedown" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="shakedown">
+    <div id="collapseShakedown" class="panel-collapse collapse" role="tabpanel" aria-labelledby="shakedown">
       <div class="panel-body">
                 Shakedown is a cloud-based application designed to make it easier for instructors to evaluate students’ code, especially as programming courses continue to grow in size. Instructors use the website to create assignments and upload testing code that will validate the correctness of students’ solutions. Students then upload their solution code and Shakedown runs each submission against the instructor’s testing code and reports the results. 
                 <br>
@@ -126,7 +141,7 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="batterUp">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#projects" href="#collapseBatterUp" aria-expanded="false" aria-controls="collapseBatterUp" onclick="changeProject('batterUp')">
+        <a class="collapsed" data-toggle="collapse" data-parent="#projects" href="#collapseBatterUp" aria-expanded="false" aria-controls="collapseBatterUp">
           Batter-Up!
         </a>
       </h4>
