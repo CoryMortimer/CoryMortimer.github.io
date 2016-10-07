@@ -1,0 +1,123 @@
+body {
+  background-color: #ECECEA;
+}
+
+#bg-vid {
+  width: 100%;  
+}
+
+.shadow {
+  box-shadow: 5px 5px 17px;
+}
+
+#overlay-image{
+  position: absolute;
+  top: 60%;
+  left: 18%;
+  background:rgba(0,0,0,0.1);
+  width: 65%;
+}
+
+#floq-section {
+  background-color: #74AFAD;
+}
+
+/*http://www.w3schools.com/howto/howto_css_menu_icon.asp
+navbar*/
+.navbar-container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    background: #D3F6DB;
+    border-radius: 100%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+/* Rotate first bar */
+.exit .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.exit .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.exit .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*Overlay*/
+/*http://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.9);
+  z-index: 9999;
+  opacity: 1;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  /*transition: 0.4s;*/
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #772D8B;
+}
+
+.hide-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .overlay a {
+    font-size: 35px;
+  }
+}
+
+#projects {
+  background-color: #ECECEA;
+}
+
+.bottom-margin {
+ margin-bottom: 10px;
+}
+
+#short-films {
+  background-color: #74AFAD;
+}
