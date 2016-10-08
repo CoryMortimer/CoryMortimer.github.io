@@ -1,5 +1,6 @@
 body {
   background-color: #ECECEA;
+  font-family: 'Oxygen', sans-serif !important;
 }
 
 #bg-vid {
@@ -19,7 +20,7 @@ body {
 }
 
 #floq-section {
-  background-color: #74AFAD;
+  background-color: #F9F9F7;
 }
 
 /*http://www.w3schools.com/howto/howto_css_menu_icon.asp
@@ -33,7 +34,7 @@ navbar*/
     z-index: 99999;
     width: 50px;
     height: 50px;
-    background: #D3F6DB;
+    background: #ACACAB;
     border-radius: 100%;
 }
 
@@ -119,5 +120,5 @@ navbar*/
 }
 
 #short-films {
-  background-color: #74AFAD;
+  background-color: #D2D2D1;
 }
