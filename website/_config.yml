@@ -18,7 +18,7 @@ title: Cory Mortimer
 description: > # this means to ignore newlines until "baseurl:"
   Personal website for Cory Mortimer. Designed by Cory Mortimer. Made with jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "corymortimer.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: corymortimer
 github_username:  corymortimer
 
