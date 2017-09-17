@@ -1,0 +1,50 @@
+<html>
+  {% include head.html %}
+  <body>
+    <div id="home">
+      <input id="menu" type="checkbox" />
+      <div id="navbar">
+        <label for="menu" id="close">X</label>
+        <div id="top">
+          <h1>Cory Mortimer</h1>
+          <h2>Software Engineer // Human</h2>
+          <p>Hold up! This site is still under construction. Cool stuff should be happening... shortly.</p>
+        </div>
+        <footer id="footer">
+          <ul>
+            <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+            {% if site.first_published %}
+              {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+              {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+            {% endif %}
+            {{ thisyear }}
+            {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+          </ul>
+        </footer>
+      </div>
+      <label id="hamburger" for="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <div id="content">
+        <div id="home-image">
+          <div id="header">
+            Cory Mortimer
+          </div>
+        </div>
+        <section id="about">
+          <h1>About</h1>
+          <p>Hello and welcome to my website! My name is Cory and I am a dreamer and a doer. More concretely, I am a software engineer that likes to think of creative and new ideas. A few words that describe me are fun-loving, focused, and quirky.</p>
+          <h2>Fun-loving</h2>
+          <p>I greatly enjoy making life fun. I believe that working together on a team filled with positivity and laughter makes for a comfortable and productive environment. In my experience, a team is motivated and eager to work on tasks when a bit of laughter is introduced. Plus, smiling is nice!</p>
+          <h2>Focused</h2>
+          <p>When a task needs to be done, my attention is completely on it. I can quickly get into "the zone" even without the aid of coffee.</p>
+          <h2>Quirky</h2>
+          <p>Whether it is inventing a new pantomime for pushing to a git branch (reach for the sky and as you flick your wrist inwards, pull your arm back down and lower your fingers one by one until you make a fist) or forcing the office to play charades (we are getting better!), you will always tilt your head to the side and shrung at me.</p>
+          <p>I designed this website myself with the help of the internet for inspiration and for some CSS guidance. This website uses the <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> static site generator to make developing easier.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
