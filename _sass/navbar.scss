@@ -1,0 +1,93 @@
+@import 'vars';
+
+#navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+  z-index: 1;
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  -webkit-transition: left .5s ease-in-out; /* For Safari 3.1 to 6.0 */
+  transition: left .5s ease-in-out;
+
+  #top {
+    margin-top: 25px;
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  #close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: $break-small) {
+      display: block;
+    }
+  }
+
+  div {
+    text-align: center;
+  }
+
+  #footer {
+    ul {
+      list-style: none;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    max-width: 384px;
+    width: 90%;
+    left: -90%;
+    background: white;
+  }
+}
+
+#hamburger {
+  background: black;
+  width: 3em;
+  height: 2em;
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+
+  div {
+    width: 2em;
+    height: 3px;
+    background: white;
+    margin: 5px auto;
+  }
+
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
+}
+
+#menu {
+  display: none;
+
+  &:checked {
+    + #navbar {
+      left: 0px;
+      @media screen and (max-width: $break-small) {
+        left: 0px;
+      }
+    }
+  }
+}

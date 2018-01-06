@@ -1,0 +1,12 @@
+@import 'vars';
+
+#main {
+  #content {
+    margin-left: 30%;
+
+    @media screen and (max-width: $break-small) {
+      margin-left: 0;
+    }
+  }
+}
+

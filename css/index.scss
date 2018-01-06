@@ -1,0 +1,14 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'main';
+@import 'navbar';
+@import 'home';
+
+body, html {
+  margin: 0;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+}
