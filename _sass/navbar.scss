@@ -1,6 +1,8 @@
 @import 'vars';
 
+// #fa8072, #91A6FF, #C4FFB2, #DF57BC
 #navbar {
+  background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,.26);
   z-index: 1;
   position: fixed;
@@ -17,6 +19,49 @@
 
     ul {
       list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        flex-flow: column;
+        height: 40px;
+        position: relative;
+
+        a {
+          color: black;
+          text-decoration: none;
+          text-align: left;
+          margin: auto 0 auto 0;
+          z-index: 1;
+          padding: 10px 0 10px 15;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+        &:hover {
+          a {
+            font-weight: bold;
+          }
+          &:before {
+            -webkit-transition: width 0.2s ease-in;
+            transition: width 0.2s ease-in;
+            width: 100%;
+          }
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 100%;
+          background-color: salmon;
+          -webkit-transition: width 0.2s ease-in;
+          transition: width 0.2s ease-in;
+        }
+        &.light-purple:before {
+          background-color: $light-purple;
+        }
+      }
     }
   }
 

@@ -1,0 +1,49 @@
+#blog {
+  #title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 50%;
+    background: url(/assets/blog.jpg) no-repeat center center;
+    background-size: cover;
+
+    h1 {
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      font-size: 4em;
+    }
+  }
+
+  #posts {
+    list-style: none;
+    padding: 10px;
+
+    li {
+      background-color: #fff;
+
+      a {
+        display: flex;
+        flex-flow: row;
+        color: black;
+        text-decoration: none;
+        div {
+          &:first-child {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            flex: 1;
+            font-size: 6.5em;
+            text-align: center;
+            padding: .1em;
+            background-color: salmon;
+          }
+          &:last-child {
+            flex: 5;
+            padding: 1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,10 +5,12 @@
 @import 'main';
 @import 'navbar';
 @import 'home';
+@import 'blog';
 
 body, html {
   margin: 0;
 }
 body {
   font-family: 'Work Sans', sans-serif;
+  background: #e9ebee;
 }
