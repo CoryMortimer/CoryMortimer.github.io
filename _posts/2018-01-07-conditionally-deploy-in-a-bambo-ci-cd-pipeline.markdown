@@ -16,7 +16,7 @@ Besides Bamboo, we use Docker Containers, an artifact store, and our deployed se
 
 Below is a simplified version of our ideal pipeline:
 
-![Ideal Pipeline]({{ "/assets/2018-01-07/bamboo.jpg" | absolute_url }}){: .center-image }
+![Ideal Pipeline]({{ "/assets/2018-01-07/bamboo.jpg" | relative_url }}){: .center-image }
 
 Multiple things to note about this diagram
 - Merge into Service X’s Repo: This means that a new branch of the repo has gone through code review and branch tests and has been merged into the develop branch. We use the develop branch to kick off our pipeline.
@@ -29,7 +29,7 @@ For this example, we have two services: Service A and Service B. Let’s say we 
 
 Again, this is our ideal pipeline. Unfortunately, we cannot find an easy way for Bamboo to **only trigger the Build and Push Service A** job and not Service B’s equivalent. Here is our current implementation of the above scenario:
 
-![Current Pipeline]({{ "/assets/2018-01-07/bamboo-with-artifacts.jpg" | absolute_url }}){: .center-image }
+![Current Pipeline]({{ "/assets/2018-01-07/bamboo-with-artifacts.jpg" | relative_url }}){: .center-image }
 
 What is different?
 - Deployed Versions: An artifact that contains the current versions of the services that are deployed. The Build Service Triggerer will read this artifact at the beginning and write any updates to it at the end of the job.
