@@ -16,6 +16,7 @@
 
 # Config help from https://github.com/barryclark/jekyll-now/blob/master/_config.yml
 title: Cory Mortimer
+name: Cory Mortimer
 # email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal website for Cory Mortimer. Designed by Cory Mortimer. Made with jekyll.
@@ -23,7 +24,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "corymortimer.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: corymortimer
 github_username:  corymortimer
-
+disqus: corymortimer
+google_analytics: UA-112016091-1
 # Build settings
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

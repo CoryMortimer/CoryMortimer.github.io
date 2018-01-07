@@ -6,6 +6,8 @@
 @import 'navbar';
 @import 'home';
 @import 'blog';
+@import 'half-image';
+@import 'post';
 
 body, html {
   margin: 0;
@@ -13,4 +15,9 @@ body, html {
 body {
   font-family: 'Work Sans', sans-serif;
   background: #e9ebee;
+}
+.center-image {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
 }

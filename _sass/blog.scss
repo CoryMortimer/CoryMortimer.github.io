@@ -1,20 +1,4 @@
 #blog {
-  #title {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    height: 50%;
-    background: url(/assets/blog.jpg) no-repeat center center;
-    background-size: cover;
-
-    h1 {
-      font-weight: bold;
-      text-align: center;
-      color: white;
-      font-size: 4em;
-    }
-  }
-
   #posts {
     list-style: none;
     padding: 10px;

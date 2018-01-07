@@ -1,0 +1,25 @@
+@import 'vars';
+
+#half-image-title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 50%;
+  background: url(/assets/blog.jpg) no-repeat center center;
+  background-size: cover;
+
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 2.7em;
+    }
+  }
+}
+
+#half-image-content {
+  padding: 0 10px;
+}
